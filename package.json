@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Telnet client implementation",
   "main": "telnet-client.js",
+  "directories": {
+    "bin": "bin"
+  },
   "bin": {
     "telnet-client": "./telnet-client.js"
   },
