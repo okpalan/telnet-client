@@ -38,4 +38,3 @@ if "%2" == "" (
   echo Error: host and port must be specified.
   exit 1
 )
-node ./node_modules/telnet-client/telnet-client.js %1 %2

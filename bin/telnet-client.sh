@@ -25,4 +25,3 @@ if [ -z "$1" ] || [ -z "$2" ]; then
   exit 1
 fi
 
-node ./node_modules/telnet-client/telnet-client.js "$1" "$2"

@@ -4,6 +4,12 @@
 This is a telnet client implementation. It can be used to connect to a host and execute commands.
 
 ## Usage
+```sh
+ node ./node_modules/telnet-client/telnet-client.js "$1" "$2"
+```
+```bat
+node ./node_modules/telnet-client/telnet-client.js %1 %2
+```
 
 ```javascript
 var telnet = require('telnet-client');
