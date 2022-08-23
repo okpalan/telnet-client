@@ -1,0 +1,19 @@
+{
+  "name": "telnet-client",
+  "version": "1.0.0",
+  "description": "Telnet client implementation",
+  "main": "telnet-client.js",
+  "bin": {
+    "telnet-client": "./telnet-client.js"
+  },
+  "keywords": [
+    "telnet",
+    "client",
+    "telnet-client"
+  ],
+  "author": "Nnamdi Michael Okpala",
+  "license": "MIT",
+  "dependencies": {
+    "net": "^1.0.2"
+  }
+}
