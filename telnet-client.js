@@ -1,4 +1,4 @@
-var net = require('net');
+const net = require('net');
 
 function Telnet() {
   this.queue = [];
@@ -18,7 +18,7 @@ function Telnet() {
 Telnet.prototype.connect = function (options, callback) {
   this.telnetSocket.connect(options, function () {
     this.connected = true;
-    callback();
+    if (callback) callback();
   }.bind(this));
 };
 
@@ -56,12 +56,12 @@ Telnet.prototype.end = function () {
   this.telnetSocket.end();
 };
 
-Telnet.prototype.prompt = function(prompt, callback) {
+Telnet.prototype.prompt = function (prompt, callback) {
   var data = '';
- 
-  this.telnetSocket.on('data', function(chunk) {
+
+  this.telnetSocket.on('data', function (chunk) {
     data += chunk.toString();
- 
+
     if (data.includes(prompt)) {
       callback(data);
     }
